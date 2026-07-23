@@ -1,7 +1,25 @@
 aid: baby2body
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/baby2body.png
 name: Baby2Body
-description: Baby2Body is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Baby2Body is the flagship consumer wellness app from Body Collective, a female-focused
+  health and wellness company founded by sports psychologist Melinda Nicci. The app delivers
+  personalized fitness, nutrition, and mental-health support across the fertility, pregnancy,
+  postpartum, parenting, and broader women's-health stages, paired with an AI health coach
+  named Bella, on-demand programs (prenatal fitness, meal plans, labor prep), expert-backed
+  articles, and a stage-specific newsletter. Baby2Body reports over two million users and is
+  backed by 500 Global. This profile has been enriched from the company's public consumer
+  surfaces; no public developer portal, API, or machine-readable specification was found.
 url: https://raw.githubusercontent.com/api-evangelist/baby2body/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Health
+- Wellness
+- Fitness
+- Pregnancy
+- Women's Health
+- Consumer
+- Mobile App
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/baby2body-domain-security.yml
 - type: Website
   url: https://bodycollective.group
+- type: About
+  url: https://www.baby2body.com/about
+- type: Blog
+  url: https://www.baby2body.com/article-search
+- type: Support
+  url: https://www.baby2body.com/help
+- type: SignUp
+  url: https://app.baby2body.com/auth/registration
+- type: Login
+  url: https://app.baby2body.com/auth/login
+- type: PrivacyPolicy
+  url: https://www.baby2body.com/privacy
+- type: TermsOfService
+  url: https://www.baby2body.com/terms
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
